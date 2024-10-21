@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    color: #ff0000; 
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; 
+}
+
+.gallery img:hover {
+    transform: scale(1.2) rotate(25deg); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.gallery img:nth-child(2):hover {
+    transform: scale(1.2) rotate(-25deg);
+}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Londrina+Sketch&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Indie+Flower&family=Londrina+Sketch&family=Permanent+Marker&display=swap');
+p{
+    font-family: "Indie Flower", cursive;
+}
+h2{
+    font-family: "Cherry Bomb One", system-ui;
+    margin-bottom: 10px;
+}
+.h22{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-top: 40px;
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #ca3333;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    font-size: 24px;
+    animation: marquee 25s linear infinite;
+    color: black;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px; 
+    text-align: center;
+    border: 2px solid #333;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+}
+
+.centered-div h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.centered-div p {
+    font-size: 20px;
+    color: #666;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.centered-div button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}  
+a{
+    font-family: "Permanent Marker", cursive;
+    color: black;
+    text-decoration: none;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+
+.left-table {
+    float: left;
+    width: 40%;
+    border-collapse: collapse;
+}
+
+.right-table {
+    float: right;
+    width: 40%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+tbody{
+    text-align: center;
+}
+td {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #8f0707;
+    color: white;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f4f4f4;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bfbfbf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-column button {
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-column button:hover {
+    background-color: #252423;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+}
+
+.footer-socials img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #bfbfbf;
+}
+
+.footer-bottom a {
+    color: #bfbfbf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+} 
+
