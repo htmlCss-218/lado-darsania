@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+h1{
+    font-family: "Exo 2", sans-serif;
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 5px;
+}
+h4{
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+h3{
+    font-family: "Teko", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+.php{
+    display: flex;
+    justify-content: space-evenly;
+}
+.vers:hover{
+    transform: scale(1.1)
+}
+.land:hover{
+    transform: scale(1.1)
+}
+.lecl:hover{
+    transform: scale(1.1)
+}
+img{
+    height: 250px;
+    width: 300px;
+    margin-left: 67px;
+    margin-right: 67px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+.table, th, td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.list{
+    justify-content: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.firs{
+    text-align: left;
+}
+.line{
+    background-color: rgb(185, 24, 24);
+}
+.ori{
+    background-color: rgb(53, 50, 50);
+    color: rgb(190, 190, 190);
+}
+tr:hover {
+    background-color: rgb(216, 98, 98);
+}
+.form{
+    margin: 20px;
+    margin-top: 40px;
+}
+.input{
+    height: 22px;
+}
+.button{
+    background-color: #a72a2a;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+}
+input:focus{
+    background-color: #b94040;
+}
+.input:hover{
+    background-color: #df9e9e;
+}
+.button:active{
+    background-color: rgb(92, 70, 70);
+}
+.button:hover{
+    background-color: #661717;
+    color: rgb(236, 191, 191);
+}
